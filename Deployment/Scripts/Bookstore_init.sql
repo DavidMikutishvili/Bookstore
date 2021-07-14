@@ -3,22 +3,22 @@ GO
 
 USE Bookstore;
 
-CREATE TABLE Authors(
+CREATE TABLE Authors (
 	id INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
 	author_name NVARCHAR(500)
 );
 
-CREATE TABLE Publishers(
+CREATE TABLE Publishers (
 	id INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
 	publisher_name NVARCHAR(500)
 );
 
-CREATE TABLE Languages(
+CREATE TABLE Languages (
 	id INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
 	language_name NVARCHAR(500)
 );
 
-CREATE TABLE Books(
+CREATE TABLE Books (
 	id INT PRIMARY KEY IDENTITY (1, 1) NOT NULL,
 	title NVARCHAR(500),
 	publication_date DATE,
